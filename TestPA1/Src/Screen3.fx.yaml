@@ -1,0 +1,8 @@
+Screen3 As screen:
+
+    Label1 As label:
+        Text: ="Power App Testing"
+        X: =443
+        Y: =101
+        ZIndex: =1
+
