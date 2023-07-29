@@ -1,0 +1,27 @@
+Footer As CanvasComponent:
+    Fill: =RGBA(237, 237, 237, 1)
+    Height: =40
+    Width: =1366
+    X: =0
+    Y: =0
+    ZIndex: =1
+
+    Footer_Label_Title As label:
+        BorderColor: =RGBA(0, 0, 0, 0)
+        DisabledColor: =RGBA(0, 0, 0, 1)
+        FocusedBorderColor: =Footer_Label_Title.BorderColor
+        HoverBorderColor: =Footer_Label_Title.BorderColor
+        HoverColor: =Footer_Label_Title.Color
+        HoverFill: =Footer_Label_Title.Fill
+        PaddingBottom: =10
+        PaddingLeft: =10
+        PaddingRight: =10
+        PaddingTop: =10
+        PressedBorderColor: =Footer_Label_Title.BorderColor
+        PressedColor: =Footer_Label_Title.Color
+        PressedFill: =Footer_Label_Title.Fill
+        Size: =10
+        Text: ="Copyright @ " & Text(Now(),"[$-en-US]yyyy") & " " & "Keppel Data Centres Pte Ltd. All rights reserved"
+        Width: =642
+        ZIndex: =7
+

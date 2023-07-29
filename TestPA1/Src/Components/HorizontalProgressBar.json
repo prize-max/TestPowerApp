@@ -1,0 +1,82 @@
+{
+  "ComponentAllowCustomization": true,
+  "ComponentChangedSinceFileImport": false,
+  "ComponentManifest": {
+    "AllowAccessToGlobals": false,
+    "AllowCustomization": true,
+    "Description": "",
+    "Name": "HorizontalProgressBar",
+    "TemplateGuid": "a8efdb0dfe1f443ca2e8641ab3b215e4"
+  },
+  "ComponentType": "CanvasComponent",
+  "CustomGroupControlTemplateName": "",
+  "CustomProperties": [
+    {
+      "Category": 0,
+      "DisplayName": "Items",
+      "Hidden": false,
+      "Name": "Items",
+      "PropertyDataTypeKey": "Table",
+      "Tooltip": "A custom property",
+      "Type": "{\"Version\":\"1.334\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"Table\",\"EnumString\":\"\",\"Type\":[{\"Name\":\"Id\",\"Kind\":\"Number\",\"EnumString\":\"\",\"Type\":[]},{\"Name\":\"Label\",\"Kind\":\"String\",\"EnumString\":\"\",\"Type\":[]},{\"Name\":\"Visible\",\"Kind\":\"Boolean\",\"EnumString\":\"\",\"Type\":[]}]}}"
+    },
+    {
+      "Category": 0,
+      "DisplayName": "Colors",
+      "Hidden": false,
+      "Name": "Colors",
+      "PropertyDataTypeKey": "Record",
+      "Tooltip": "A custom Colors",
+      "Type": "{\"Version\":\"1.334\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"Record\",\"EnumString\":\"\",\"Type\":[{\"Name\":\"CircleBroderColor\",\"Kind\":\"String\",\"EnumString\":\"\",\"Type\":[]},{\"Name\":\"LabelActive\",\"Kind\":\"String\",\"EnumString\":\"\",\"Type\":[]},{\"Name\":\"LabelDone\",\"Kind\":\"String\",\"EnumString\":\"\",\"Type\":[]},{\"Name\":\"LabelToDo\",\"Kind\":\"String\",\"EnumString\":\"\",\"Type\":[]},{\"Name\":\"StateActive\",\"Kind\":\"String\",\"EnumString\":\"\",\"Type\":[]},{\"Name\":\"StateDone\",\"Kind\":\"String\",\"EnumString\":\"\",\"Type\":[]},{\"Name\":\"StateToDo\",\"Kind\":\"String\",\"EnumString\":\"\",\"Type\":[]}]}}"
+    },
+    {
+      "Category": 0,
+      "DisplayName": "Active Step",
+      "Hidden": false,
+      "Name": "ActiveStep",
+      "PropertyDataTypeKey": "Number",
+      "Tooltip": "A custom property",
+      "Type": "{\"Version\":\"1.334\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"Number\",\"EnumString\":\"\",\"Type\":[]}}"
+    },
+    {
+      "Category": 0,
+      "DisplayName": "Allow step selection",
+      "Hidden": false,
+      "Name": "AllowStepSelection",
+      "PropertyDataTypeKey": "Boolean",
+      "Tooltip": "A custom Allow step selection",
+      "Type": "{\"Version\":\"1.334\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"Boolean\",\"EnumString\":\"\",\"Type\":[]}}"
+    },
+    {
+      "Category": 0,
+      "DisplayName": "OnSelect",
+      "Hidden": true,
+      "Name": "OnSelect",
+      "PropertyDataTypeKey": "String",
+      "Tooltip": "A OnSelect custom property",
+      "Type": "{\"Version\":\"1.334\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"String\",\"EnumString\":\"\",\"Type\":[]}}"
+    },
+    {
+      "Category": 0,
+      "DisplayName": "Selected Step",
+      "Hidden": true,
+      "Name": "SelectedStep",
+      "PropertyDataTypeKey": "String",
+      "Tooltip": "A custom property",
+      "Type": "{\"Version\":\"1.334\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"String\",\"EnumString\":\"\",\"Type\":[]}}"
+    }
+  ],
+  "FirstParty": true,
+  "Id": "http://microsoft.com/appmagic/Component",
+  "IsComponentLocked": false,
+  "IsComponentTemplate": true,
+  "IsCustomGroupControlTemplate": false,
+  "IsPcfControl": false,
+  "IsPremiumPcfControl": false,
+  "IsWidgetTemplate": false,
+  "LastModifiedTimestamp": "638262493127334058",
+  "Name": "a8efdb0dfe1f443ca2e8641ab3b215e4",
+  "OverridableProperties": {},
+  "TemplateOriginalName": "cb3bdc2ee7a74eb6aa6b117b9fcca236",
+  "Version": "637667114939913522"
+}

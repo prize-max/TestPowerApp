@@ -1,0 +1,142 @@
+HorizontalProgressBar As CanvasComponent:
+    ActiveStep: =2
+    AllowStepSelection: =true
+    Colors: |-
+        ={
+            StateToDo: "Gray",
+            StateActive: "#FFBF00", //YELLOW
+            StateDone: "Green", 
+            LabelToDo: "#000000",
+            LabelActive: "DB5E04", 
+            LabelDone: "#808080", //Gray
+            CircleBroderColor: "#FFFFFF" //White
+        }
+    Fill: =RGBA(0, 0, 0, 0)
+    Height: =75
+    Items: |-
+        =Table(
+            {
+                Id: 1,
+                Label:"Basic",
+                Visible: true
+            }, 
+            {
+                Id: 2,
+                Label:"Vendors",
+                Visible: true
+            }, 
+            {
+                Id: 3,
+                Label:"Customers",
+                Visible: true
+            }, 
+            {
+                Id: 4,
+                Label:"Cost Breakdown",
+                Visible: true
+            }, 
+            {
+                Id: 5,
+                Label:"Additional Info",
+                Visible: true
+            }
+        )
+    OnSelect: ="Text"
+    SelectedStep: ="Text"
+    Width: =1200
+    X: =0
+    Y: =0
+    ZIndex: =1
+
+    "galBarItems As gallery.'BrowseLayout_Vertical_OneTextVariant_ver4.0'":
+        BorderColor: =RGBA(166, 166, 166, 1)
+        Height: =65
+        Items: =HorizontalProgressBar.Items
+        Layout: =Layout.Vertical
+        TemplatePadding: =0
+        TemplateSize: =45
+        Width: =1160
+        WrapCount: =CountRows(HorizontalProgressBar.Items)
+        X: =25
+        Y: =10
+        ZIndex: =1
+
+        lblItem As label:
+            Color: =RGBA(255, 255, 255, 1)
+            Font: =Font.'Segoe UI'
+            Height: =26
+            OnSelect: =Select(Parent)
+            PaddingBottom: =0
+            PaddingLeft: =0
+            PaddingRight: =0
+            PaddingTop: =0
+            Size: =11
+            Text: =ThisItem.Label
+            VerticalAlign: =VerticalAlign.Top
+            Width: =110
+            X: =shpCircle.X + shpCircle.Y + 45
+            Y: =15
+            ZIndex: =1
+
+        shpCircle As circle:
+            BorderColor: =RGBA(166, 166, 166, 1)
+            BorderStyle: =BorderStyle.None
+            BorderThickness: =2
+            DisabledFill: =RGBA(135, 100, 184, 1)
+            Fill: |-
+                =ColorValue(
+                    If (
+                        ThisItem.Id > HorizontalProgressBar.ActiveStep,
+                        HorizontalProgressBar.Colors.StateToDo,// Gray
+                        ThisItem.Id = HorizontalProgressBar.ActiveStep,
+                        HorizontalProgressBar.Colors.StateActive, //Yellow
+                        ThisItem.Id < HorizontalProgressBar.ActiveStep,
+                        HorizontalProgressBar.Colors.StateDone, // Green
+                        "Gray"
+                    )
+                )
+            Height: =32
+            HoverFill: =RGBA(135, 100, 184, 1)
+            OnSelect: =Select(Parent)
+            PressedFill: =RGBA(135, 100, 184, 1)
+            Width: =32
+            X: =25
+            Y: =9
+            ZIndex: =4
+
+        icoCheck As icon.Check:
+            BorderColor: =RGBA(166, 166, 166, 1)
+            Color: =RGBA(255, 255, 255, 1)
+            DisabledBorderColor: =RGBA(0, 0, 0, 0)
+            DisabledColor: =RGBA(220, 220, 220, 1)
+            DisabledFill: =RGBA(0, 0, 0, 0)
+            FocusedBorderThickness: =4
+            Height: =36
+            HoverBorderColor: =RGBA(0, 0, 0, 0)
+            HoverColor: =ColorFade(RGBA(164, 38, 44, 1), -30%)
+            HoverFill: =RGBA(0, 0, 0, 0)
+            Icon: =Icon.Check
+            OnSelect: =Select(Parent)
+            PressedBorderColor: =RGBA(0, 0, 0, 0)
+            PressedColor: =ColorFade(RGBA(164, 38, 44, 1), -30%)
+            PressedFill: =RGBA(0, 0, 0, 0)
+            Visible: =If(ThisItem.Id < HorizontalProgressBar.ActiveStep, true, false)
+            Width: =26
+            X: =28
+            Y: =7
+            ZIndex: =5
+
+    shpProgessbarBackground As rectangle:
+        BorderColor: =RGBA(0, 0, 0, 0)
+        BorderStyle: =BorderStyle.None
+        BorderThickness: =2
+        DisabledFill: =RGBA(166, 166, 166, 1)
+        Fill: =RGBA(206, 17, 45, 1)
+        FocusedBorderThickness: =4
+        Height: =33
+        HoverFill: =RGBA(135, 100, 184, 1)
+        PressedFill: =RGBA(135, 100, 184, 1)
+        Width: =1200
+        Y: =18
+        ZIndex: =1
+

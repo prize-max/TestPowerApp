@@ -1,0 +1,100 @@
+TopProgressBar As CanvasComponent:
+    CurrentIndex: =1
+    Fill: =RGBA(0, 0, 0, 0)
+    Height: =50
+    HomeScreen: =App.ActiveScreen
+    Items: |-
+        =Table(
+            {
+                Index: 1,
+                Text: "Basic"
+            },
+            {
+                Index: 2,
+                Text: "Vendors"
+            },
+            {
+                Index: 3,
+                Text: "Cost Info"
+            },
+            {
+                Index: 4,
+                Text: "Contract Breakdown"
+            },
+            {
+                Index: 5,
+                Text: "Additional Information"
+            }
+        )
+    PurchaseRequestCode: ="0000"
+    Width: =1366
+    X: =0
+    Y: =0
+    ZIndex: =3
+
+    "galProgress As gallery.'BrowseLayout_Horizontal_TwoTextOneImageVariant_ver4.0'":
+        BorderColor: =RGBA(166, 166, 166, 1)
+        Fill: =RGBA(184, 0, 0, 1)
+        Height: =50
+        Items: =TopProgressBar.Items
+        TemplatePadding: =0
+        TemplateSize: =233
+        Width: =Parent.Width - 51 - 150
+        X: =201
+        ZIndex: =1
+
+        Title As label:
+            Align: =Align.Center
+            Color: =If(ThisItem.Index = TopProgressBar.CurrentIndex, RGBA(255, 255, 255, 1), RGBA(220, 153, 153, 1))
+            Height: |
+                =50
+            OnSelect: =Select(Parent)
+            PaddingBottom: =10
+            PaddingLeft: =10
+            PaddingRight: =10
+            PaddingTop: =10
+            Size: =13
+            Text: =ThisItem.Text
+            Width: =233
+            ZIndex: =2
+
+    iconHome As icon.Add:
+        BorderColor: =RGBA(166, 166, 166, 1)
+        Color: =RGBA(255, 255, 255, 1)
+        DisabledBorderColor: =RGBA(0, 0, 0, 0)
+        DisabledColor: =RGBA(220, 220, 220, 1)
+        DisabledFill: =RGBA(0, 0, 0, 0)
+        Fill: =RGBA(184, 0, 0, 1)
+        FocusedBorderThickness: =4
+        Height: =50
+        HoverBorderColor: =RGBA(0, 0, 0, 0)
+        HoverColor: =ColorFade(RGBA(164, 38, 44, 1), -30%)
+        HoverFill: =RGBA(0, 0, 0, 0)
+        Icon: =Icon.Home
+        OnSelect: =Navigate(TopProgressBar.HomeScreen,ScreenTransition.UnCoverRight)
+        PaddingBottom: =10
+        PaddingLeft: =10
+        PaddingRight: =10
+        PaddingTop: =10
+        PressedBorderColor: =RGBA(0, 0, 0, 0)
+        PressedColor: =ColorFade(RGBA(164, 38, 44, 1), -30%)
+        PressedFill: =RGBA(0, 0, 0, 0)
+        Width: =51
+        ZIndex: =2
+
+    lblPurchaseRequestCode As label:
+        Align: =Align.Center
+        BorderColor: =RGBA(184, 0, 0, 1)
+        BorderStyle: =BorderStyle.None
+        BorderThickness: =2
+        Color: =RGBA(255, 255, 255, 1)
+        DisabledBorderColor: =RGBA(0, 0, 0, 0)
+        Fill: =RGBA(116, 116, 116, 1)
+        FocusedBorderThickness: =4
+        FontWeight: =FontWeight.Bold
+        Height: =50
+        Size: =14
+        Text: =If(IsBlank(TopProgressBar.PurchaseRequestCode), "NEW", TopProgressBar.PurchaseRequestCode)
+        X: =51
+        ZIndex: =3
+

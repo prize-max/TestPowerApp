@@ -1,0 +1,181 @@
+[
+  {
+    "CdsFCBContext": "{\"FileType\":true,\"ImageExternalStorage\":true}",
+    "EntitySetName": "cr216_kdcusers",
+    "IsHidden": false,
+    "IsSampleData": false,
+    "IsWritable": true,
+    "LogicalName": "cr216_kdcuser",
+    "MaxGetRowsCount": 500,
+    "Name": "KDC Users",
+    "NativeCDSDataSourceInfoNameMapping": {
+      "_ownerid_value": "Owner",
+      "{Attachments}": "Attachments",
+      "cr216_address": "Address",
+      "cr216_ApplicationPermission_cr216_KDCUser": "Application Site Permissions",
+      "cr216_businesstitle": "Business Title",
+      "cr216_BusinessUnitCompanyName": "Business Unit (Company Name)",
+      "cr216_contractenddate": "Contract End Date",
+      "cr216_contractstartdate": "Contract Start Date",
+      "cr216_Country": "Country",
+      "cr216_cr216_accesscardregister_UserId_cr216_kdc": "AccessCardRegisters",
+      "cr216_cr216_dcopsonboarding_KDCUserLookup_cr216": "DC Ops Onboarding Phase 1S",
+      "cr216_cr216_hardwarerequisionregister_UserId_cr": "HardwareRequisionRegisters",
+      "cr216_cr216_jacketrequisition_StaffId_cr216_kdc": "JacketRequisitions",
+      "cr216_cr216_liftcardregister_StaffId_cr216_kdcu": "LiftCardRegisters",
+      "cr216_cr216_namecardregister_StaffId_cr216_kdcu": "NameCardRegisters",
+      "cr216_cr216_opexexpensenaturesubcategory_OPENSu": "Opex Expense Nature Sub Categories",
+      "cr216_cr216_staffidregister_UserId_cr216_kdcuse": "Staff ID Registers",
+      "cr216_Department": "Department",
+      "cr216_designation": "Designation",
+      "cr216_enddate": "End Date",
+      "cr216_firstname": "First Name",
+      "cr216_fullname": "Full Name",
+      "cr216_insgkdc_approvedbudget_KDCOwner_cr216_kdc": "Approved Budgets (cr216_insgkdc_approvedbudget_KDCOwner_cr216_kdc)",
+      "cr216_insgkdc_approvedbudget_PersonInChargeKDCU": "Approved Budgets (cr216_insgkdc_approvedbudget_PersonInChargeKDCU)",
+      "cr216_isallowedallsites": "IsAllowedAllSites",
+      "cr216_kdcuser_Annotations": "Notes",
+      "cr216_kdcuser_AsyncOperations": "System Jobs",
+      "cr216_kdcuser_BulkDeleteFailures": "Bulk Delete Failures",
+      "cr216_kdcuser_DuplicateBaseRecord": "Duplicate Records (cr216_kdcuser_DuplicateBaseRecord)",
+      "cr216_kdcuser_DuplicateMatchingRecord": "Duplicate Records (cr216_kdcuser_DuplicateMatchingRecord)",
+      "cr216_kdcuser_MailboxTrackingFolders": "Mailbox Auto Tracking Folders",
+      "cr216_kdcuser_PrincipalObjectAttributeAccesses": "Field Sharing",
+      "cr216_kdcuser_ProcessSession": "Process Sessions",
+      "cr216_kdcuser_SyncErrors": "Sync Errors",
+      "cr216_kdcuserid": "KDCUserId",
+      "cr216_lastname": "Last Name",
+      "cr216_manager": "Manager",
+      "cr216_mobilenumber": "Mobile Number",
+      "cr216_name": "Name",
+      "cr216_nameinchinese": "Name in Chinese",
+      "cr216_permanentstafftype": "Permanent Staff Type",
+      "cr216_postalcode": "Postal Code",
+      "cr216_primaryemailworkemail": "Primary Email (Work Email)",
+      "cr216_remarks": "Remarks",
+      "cr216_secondryemailpersonalemail": "Secondry Email (Personal Email)",
+      "cr216_startdatedateofjoin": "Start Date ( Date of join )",
+      "cr216_WorkflowStatus": "WorkflowStatus",
+      "cr216_workphonenumber": "Work Phone Number",
+      "cr216_WorkSite": "Work Site",
+      "createdby": "Created By",
+      "createdon": "Created On",
+      "createdonbehalfby": "Created By (Delegate)",
+      "importsequencenumber": "Import Sequence Number",
+      "kdc_kdc_kdcprocurementteam_UserName_cr216_kdc": "KDC Procurement Teams",
+      "modifiedby": "Modified By",
+      "modifiedon": "Modified On",
+      "modifiedonbehalfby": "Modified By (Delegate)",
+      "new_new_dcopsonboardingphase2_KDCUserLookup_c": "DC Ops Onboarding Phase 2S",
+      "new_new_dcopsonboardingphase3_KDCUserLookup_c": "DC Ops Onboarding Phase 3S",
+      "new_new_dcopsonboardingphase4_KDCUserLookup_c": "DC Ops Onboarding Phase 4S",
+      "new_new_dcopsonboardingphase5_KDCUserLookup_c": "DC Ops Onboarding Phase 5S",
+      "new_new_dcopsonboardingphase6_KDCUserLookup_c": "DC Ops Onboarding Phase 6S",
+      "overriddencreatedon": "Record Created On",
+      "owningbusinessunit": "Owning Business Unit",
+      "owningteam": "Owning Team",
+      "owninguser": "Owning User",
+      "statecode": "Status",
+      "statuscode": "Status Reason",
+      "timezoneruleversionnumber": "Time Zone Rule Version Number",
+      "utcconversiontimezonecode": "UTC Conversion Time Zone Code",
+      "versionnumber": "Version Number"
+    },
+    "PreferredName": "KDC Users",
+    "Type": "NativeCDSDataSourceInfo"
+  },
+  {
+    "DisplayName": "KDC Users (Views)",
+    "Name": "_cr216_kdcuser_views",
+    "RelatedEntityName": "KDC Users",
+    "TrimmedViewName": true,
+    "Type": "ViewInfo",
+    "ViewInfoNameMapping": {
+      "23c8c10d-5721-40b6-98ba-473168fd94b7": "KDCUser Advanced Find View",
+      "38b15623-467f-4ddc-83d5-a92233c0e43a": "Inactive KDCUsers",
+      "5b95278f-1795-4a7c-ae0c-5a5971385da7": "KDCUser Associated View",
+      "720eae55-8190-465c-bea4-6612bf6489b5": "KDCUser Lookup View",
+      "cb477a8f-1f90-4f22-9f1f-2264de6982ec": "Active KDCUsers"
+    }
+  },
+  {
+    "DisplayName": "IsAllowedAllSites (KDC Users)",
+    "Name": "cr216_kdcuser_cr216_isallowedallsites",
+    "OptionSetInfoNameMapping": {
+      "0": "No",
+      "1": "Yes"
+    },
+    "OptionSetIsBooleanValued": true,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "cr216_isallowedallsites",
+        "OptionSetReferenceEntityName": "KDC Users"
+      }
+    },
+    "OptionSetTypeKey": "BooleanType",
+    "RelatedColumnInvariantName": "cr216_isallowedallsites",
+    "RelatedEntityName": "KDC Users",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "Status (KDC Users)",
+    "Name": "cr216_kdcuser_statecode",
+    "OptionSetInfoNameMapping": {
+      "0": "Active",
+      "1": "Inactive"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "statecode",
+        "OptionSetReferenceEntityName": "KDC Users"
+      }
+    },
+    "OptionSetTypeKey": "StateType",
+    "RelatedColumnInvariantName": "statecode",
+    "RelatedEntityName": "KDC Users",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "Status Reason (KDC Users)",
+    "Name": "cr216_kdcuser_statuscode",
+    "OptionSetInfoNameMapping": {
+      "1": "Active",
+      "2": "Inactive"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "statuscode",
+        "OptionSetReferenceEntityName": "KDC Users"
+      }
+    },
+    "OptionSetTypeKey": "StatusType",
+    "RelatedColumnInvariantName": "statuscode",
+    "RelatedEntityName": "KDC Users",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "Permanent Staff Type",
+    "Name": "cr216_permanentstafftype",
+    "OptionSetInfoNameMapping": {
+      "680730000": "Managerial",
+      "680730001": "Supervisor"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": true,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "cr216_permanentstafftype",
+        "OptionSetReferenceEntityName": "KDC Users"
+      }
+    },
+    "OptionSetTypeKey": "PicklistType",
+    "RelatedColumnInvariantName": "cr216_permanentstafftype",
+    "RelatedEntityName": "KDC Users",
+    "Type": "OptionSetInfo"
+  }
+]

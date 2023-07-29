@@ -1,0 +1,85 @@
+<application xmlns:xml="http://www.w3.org/XML/1998/namespace" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:service="https://asia-001.azure-apim.net/apim/logicflows" xmlns:siena="http://schemas.microsoft.com/MicrosoftProjectSiena/WADL/2014/11" siena:serviceId="PRCommittedAmount" xmlns="http://wadl.dev.java.net/2009/02">
+  <doc title="PR Committed Amount" />
+  <grammars>
+    <jsonTypes targetNamespace="https://asia-001.azure-apim.net/apim/logicflows" xmlns="http://schemas.microsoft.com/MicrosoftProjectSiena/WADL/2014/11">
+      <string name="ManualTriggerInput_text_def" />
+      <string name="ManualTriggerInput_text_1_def" />
+      <number name="ManualTriggerInput_number_def" />
+      <boolean name="ManualTriggerInput_boolean_def" />
+      <string name="ManualTriggerInput_text_2_def" />
+      <string name="ManualTriggerInput_text_3_def" />
+      <string name="ManualTriggerInput_text_4_def" />
+      <string name="ManualTriggerInput_text_5_def" />
+      <boolean name="ManualTriggerInput_boolean_1_def" />
+      <object name="ManualTriggerInput">
+        <property name="text" type="string" />
+        <property name="text_1" type="string" />
+        <property name="number" type="number" />
+        <property name="boolean" type="boolean" />
+        <property name="text_2" type="string" />
+        <property name="text_3" type="string" />
+        <property name="text_4" type="string" />
+        <property name="text_5" type="string" />
+        <property name="boolean_1" type="boolean" />
+      </object>
+      <string name="ResponseActionOutput_amounts_def" />
+      <object name="ResponseActionOutput">
+        <property name="amounts" type="string" />
+      </object>
+      <object name="Run_responses_default_def" />
+    </jsonTypes>
+  </grammars>
+  <resources siena:authenticationProviderHref="#PowerAppAuth" base="https://asia-001.azure-apim.net/apim/logicflows">
+    <resource path="/{connectionId}/triggers/manual/run">
+      <param style="template" name="connectionId" type="xs:string" required="true" />
+      <method siena:requiresAuthentication="true" name="POST" id="Run">
+        <doc title="Runs a logic flow trigger." />
+        <request>
+          <param style="query" name="api-version" type="xs:string" required="true" fixed="2015-02-01-preview">
+            <doc title="The api version" />
+          </param>
+          <representation mediaType="application/json">
+            <param style="plain" name="text" path="/text" type="xs:string" required="true">
+              <doc title="Purchase Request ID" />
+            </param>
+            <param style="plain" name="text_1" path="/text_1" type="xs:string" required="true">
+              <doc title="Site ID" />
+            </param>
+            <param style="plain" name="number" path="/number" type="xs:double" required="true">
+              <doc title="Fiscal Year" />
+            </param>
+            <param style="plain" name="boolean" path="/boolean" type="xs:boolean" required="true">
+              <doc title="Mandatory" />
+            </param>
+            <param style="plain" name="text_2" path="/text_2" type="xs:string" required="true">
+              <doc title="Expense Nature ID" />
+            </param>
+            <param style="plain" name="text_3" path="/text_3" type="xs:string" required="true">
+              <doc title="Expense Nature Category ID" />
+            </param>
+            <param style="plain" name="text_4" path="/text_4" type="xs:string" required="true">
+              <doc title="Customer PO Number" />
+            </param>
+            <param style="plain" name="text_5" path="/text_5" type="xs:string" required="true">
+              <doc title="Excluded Workflow Statuses" />
+            </param>
+            <param style="plain" name="boolean_1" path="/boolean_1" type="xs:boolean" required="true">
+              <doc title="Recoverable" />
+            </param>
+          </representation>
+        </request>
+        <response>
+          <representation mediaType="application/json" element="service:ResponseActionOutput" />
+        </response>
+      </method>
+    </resource>
+  </resources>
+  <authenticationProviders xmlns="http://schemas.microsoft.com/MicrosoftProjectSiena/WADL/2014/11">
+    <connectionProvider id="PowerAppAuth" siena:connectionProviderId="logicflows" />
+  </authenticationProviders>
+  <template xmlns="http://schemas.microsoft.com/MicrosoftProjectSiena/WADL/2014/11">
+    <variable name="connectionId">
+      <modifyParams style="template" name="connectionId" attribute="fixed" />
+    </variable>
+  </template>
+</application>
