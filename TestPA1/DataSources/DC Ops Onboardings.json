@@ -1,0 +1,362 @@
+[
+  {
+    "CdsFCBContext": "{\"FileType\":true,\"ImageExternalStorage\":true}",
+    "EntitySetName": "cr216_dcopsonboardings",
+    "IsHidden": false,
+    "IsSampleData": false,
+    "IsWritable": true,
+    "LogicalName": "cr216_dcopsonboarding",
+    "MaxGetRowsCount": 500,
+    "Name": "DC Ops Onboardings",
+    "NativeCDSDataSourceInfoNameMapping": {
+      "_ownerid_value": "Owner",
+      "{Attachments}": "Attachments",
+      "cr216_attendedbydesignation": "Attended by Designation",
+      "cr216_attendedbyname": "Attended by Name",
+      "cr216_attendedbytimestamp": "Attended by Time Stamp",
+      "cr216_conductedbydesignation": "Conducted by Designation",
+      "cr216_conductedbyname": "Conducted by Name",
+      "cr216_conductedbytimestamp": "Conducted by Time Stamp",
+      "cr216_dcopsonboarding_Annotations": "Notes",
+      "cr216_dcopsonboarding_AsyncOperations": "System Jobs",
+      "cr216_dcopsonboarding_BulkDeleteFailures": "Bulk Delete Failures",
+      "cr216_dcopsonboarding_DuplicateBaseRecord": "Duplicate Records (cr216_dcopsonboarding_DuplicateBaseRecord)",
+      "cr216_dcopsonboarding_DuplicateMatchingRecord": "Duplicate Records (cr216_dcopsonboarding_DuplicateMatchingRecord)",
+      "cr216_dcopsonboarding_MailboxTrackingFolders": "Mailbox Auto Tracking Folders",
+      "cr216_dcopsonboarding_PrincipalObjectAttributeAccesses": "Field Sharing",
+      "cr216_dcopsonboarding_ProcessSession": "Process Sessions",
+      "cr216_dcopsonboarding_SyncErrors": "Sync Errors",
+      "cr216_dcopsonboardingid": "DC Ops Onboarding",
+      "cr216_emailaccountapplication": "Email Account Application",
+      "cr216_emailaddressissued": "Email Address Issued",
+      "cr216_issueofcarmotorcycledecalsifrequired": "Issue of Car/Motorcycle Decals (If Required)",
+      "cr216_issueoflaptopifrequired": "Issue of Laptop (If Required)",
+      "cr216_KDCUserLookup": "KDC User Lookup",
+      "cr216_kickstarttransition": "Kick Start Transition ",
+      "cr216_name": "Name",
+      "cr216_newpasswordassign": "New Password Assign",
+      "cr216_personalppetoolsissue": "Personal PPE & Tools issue",
+      "cr216_plannewstaffonboardingchecklist": "Plan New Staff on-boarding Checklist",
+      "cr216_remarks": "Remarks",
+      "cr216_reviewedbydesignation": "Reviewed by Designation",
+      "cr216_reviewedbyname": "Reviewed by Name",
+      "cr216_reviewedbytimestamp": "Reviewed by Time Stamp",
+      "cr216_selectall": "Select all",
+      "cr216_smsalertsettingtobeupdatedifrolerequired": "SMS alert setting to be updated (if role required)",
+      "cr216_staffaccesscardapplicationissuance": "Staff Access Card Application  & Issuance",
+      "cr216_updateteamsorganizationchart": "Update Team’s Organization Chart ",
+      "createdby": "Created By",
+      "createdon": "Created On",
+      "createdonbehalfby": "Created By (Delegate)",
+      "importsequencenumber": "Import Sequence Number",
+      "modifiedby": "Modified By",
+      "modifiedon": "Modified On",
+      "modifiedonbehalfby": "Modified By (Delegate)",
+      "overriddencreatedon": "Record Created On",
+      "owningbusinessunit": "Owning Business Unit",
+      "owningteam": "Owning Team",
+      "owninguser": "Owning User",
+      "statecode": "Status",
+      "statuscode": "Status Reason",
+      "timezoneruleversionnumber": "Time Zone Rule Version Number",
+      "utcconversiontimezonecode": "UTC Conversion Time Zone Code",
+      "versionnumber": "Version Number"
+    },
+    "PreferredName": "DC Ops Onboardings",
+    "Type": "NativeCDSDataSourceInfo"
+  },
+  {
+    "DisplayName": "DC Ops Onboardings (Views)",
+    "Name": "_cr216_dcopsonboarding_views",
+    "RelatedEntityName": "DC Ops Onboardings",
+    "TrimmedViewName": true,
+    "Type": "ViewInfo",
+    "ViewInfoNameMapping": {
+      "3b458379-43ac-4e17-a2a5-db8b4574d280": "DC Ops Onboarding Advanced Find View",
+      "7419315f-4f74-4ba5-ab1c-c8b1f69b977c": "DC Ops Onboarding Associated View",
+      "79e35df9-93cf-4c4d-a539-84fdd1fc0c50": "Inactive DC Ops Onboardings",
+      "7a06591b-2bef-4fef-813d-bb9d826f0b25": "Active DC Ops Onboardings",
+      "a051f3e3-68b2-48dc-bf27-89d36933a897": "DC Ops Onboarding Lookup View"
+    }
+  },
+  {
+    "DisplayName": "Email Account Application (DC Ops Onboardings)",
+    "Name": "cr216_dcopsonboarding_cr216_emailaccountapplication",
+    "OptionSetInfoNameMapping": {
+      "0": "No",
+      "1": "Yes"
+    },
+    "OptionSetIsBooleanValued": true,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "cr216_emailaccountapplication",
+        "OptionSetReferenceEntityName": "DC Ops Onboardings"
+      }
+    },
+    "OptionSetTypeKey": "BooleanType",
+    "RelatedColumnInvariantName": "cr216_emailaccountapplication",
+    "RelatedEntityName": "DC Ops Onboardings",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "Email Address Issued (DC Ops Onboardings)",
+    "Name": "cr216_dcopsonboarding_cr216_emailaddressissued",
+    "OptionSetInfoNameMapping": {
+      "0": "No",
+      "1": "Yes"
+    },
+    "OptionSetIsBooleanValued": true,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "cr216_emailaddressissued",
+        "OptionSetReferenceEntityName": "DC Ops Onboardings"
+      }
+    },
+    "OptionSetTypeKey": "BooleanType",
+    "RelatedColumnInvariantName": "cr216_emailaddressissued",
+    "RelatedEntityName": "DC Ops Onboardings",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "Issue of Car/Motorcycle Decals (If Required) (DC Ops Onboardings)",
+    "Name": "cr216_dcopsonboarding_cr216_issueofcarmotorcycledecalsifrequired",
+    "OptionSetInfoNameMapping": {
+      "0": "No",
+      "1": "Yes"
+    },
+    "OptionSetIsBooleanValued": true,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "cr216_issueofcarmotorcycledecalsifrequired",
+        "OptionSetReferenceEntityName": "DC Ops Onboardings"
+      }
+    },
+    "OptionSetTypeKey": "BooleanType",
+    "RelatedColumnInvariantName": "cr216_issueofcarmotorcycledecalsifrequired",
+    "RelatedEntityName": "DC Ops Onboardings",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "Issue of Laptop (If Required) (DC Ops Onboardings)",
+    "Name": "cr216_dcopsonboarding_cr216_issueoflaptopifrequired",
+    "OptionSetInfoNameMapping": {
+      "0": "No",
+      "1": "Yes"
+    },
+    "OptionSetIsBooleanValued": true,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "cr216_issueoflaptopifrequired",
+        "OptionSetReferenceEntityName": "DC Ops Onboardings"
+      }
+    },
+    "OptionSetTypeKey": "BooleanType",
+    "RelatedColumnInvariantName": "cr216_issueoflaptopifrequired",
+    "RelatedEntityName": "DC Ops Onboardings",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "Kick Start Transition  (DC Ops Onboardings)",
+    "Name": "cr216_dcopsonboarding_cr216_kickstarttransition",
+    "OptionSetInfoNameMapping": {
+      "0": "No",
+      "1": "Yes"
+    },
+    "OptionSetIsBooleanValued": true,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "cr216_kickstarttransition",
+        "OptionSetReferenceEntityName": "DC Ops Onboardings"
+      }
+    },
+    "OptionSetTypeKey": "BooleanType",
+    "RelatedColumnInvariantName": "cr216_kickstarttransition",
+    "RelatedEntityName": "DC Ops Onboardings",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "New Password Assign (DC Ops Onboardings)",
+    "Name": "cr216_dcopsonboarding_cr216_newpasswordassign",
+    "OptionSetInfoNameMapping": {
+      "0": "No",
+      "1": "Yes"
+    },
+    "OptionSetIsBooleanValued": true,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "cr216_newpasswordassign",
+        "OptionSetReferenceEntityName": "DC Ops Onboardings"
+      }
+    },
+    "OptionSetTypeKey": "BooleanType",
+    "RelatedColumnInvariantName": "cr216_newpasswordassign",
+    "RelatedEntityName": "DC Ops Onboardings",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "Personal PPE & Tools issue (DC Ops Onboardings)",
+    "Name": "cr216_dcopsonboarding_cr216_personalppetoolsissue",
+    "OptionSetInfoNameMapping": {
+      "0": "No",
+      "1": "Yes"
+    },
+    "OptionSetIsBooleanValued": true,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "cr216_personalppetoolsissue",
+        "OptionSetReferenceEntityName": "DC Ops Onboardings"
+      }
+    },
+    "OptionSetTypeKey": "BooleanType",
+    "RelatedColumnInvariantName": "cr216_personalppetoolsissue",
+    "RelatedEntityName": "DC Ops Onboardings",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "Plan New Staff on-boarding Checklist (DC Ops Onboardings)",
+    "Name": "cr216_dcopsonboarding_cr216_plannewstaffonboardingchecklist",
+    "OptionSetInfoNameMapping": {
+      "0": "No",
+      "1": "Yes"
+    },
+    "OptionSetIsBooleanValued": true,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "cr216_plannewstaffonboardingchecklist",
+        "OptionSetReferenceEntityName": "DC Ops Onboardings"
+      }
+    },
+    "OptionSetTypeKey": "BooleanType",
+    "RelatedColumnInvariantName": "cr216_plannewstaffonboardingchecklist",
+    "RelatedEntityName": "DC Ops Onboardings",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "Select all (DC Ops Onboardings)",
+    "Name": "cr216_dcopsonboarding_cr216_selectall",
+    "OptionSetInfoNameMapping": {
+      "0": "No",
+      "1": "Yes"
+    },
+    "OptionSetIsBooleanValued": true,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "cr216_selectall",
+        "OptionSetReferenceEntityName": "DC Ops Onboardings"
+      }
+    },
+    "OptionSetTypeKey": "BooleanType",
+    "RelatedColumnInvariantName": "cr216_selectall",
+    "RelatedEntityName": "DC Ops Onboardings",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "SMS alert setting to be updated (if role required) (DC Ops Onboardings)",
+    "Name": "cr216_dcopsonboarding_cr216_smsalertsettingtobeupdatedifrolerequired",
+    "OptionSetInfoNameMapping": {
+      "0": "No",
+      "1": "Yes"
+    },
+    "OptionSetIsBooleanValued": true,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "cr216_smsalertsettingtobeupdatedifrolerequired",
+        "OptionSetReferenceEntityName": "DC Ops Onboardings"
+      }
+    },
+    "OptionSetTypeKey": "BooleanType",
+    "RelatedColumnInvariantName": "cr216_smsalertsettingtobeupdatedifrolerequired",
+    "RelatedEntityName": "DC Ops Onboardings",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "Staff Access Card Application  & Issuance (DC Ops Onboardings)",
+    "Name": "cr216_dcopsonboarding_cr216_staffaccesscardapplicationissuance",
+    "OptionSetInfoNameMapping": {
+      "0": "No",
+      "1": "Yes"
+    },
+    "OptionSetIsBooleanValued": true,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "cr216_staffaccesscardapplicationissuance",
+        "OptionSetReferenceEntityName": "DC Ops Onboardings"
+      }
+    },
+    "OptionSetTypeKey": "BooleanType",
+    "RelatedColumnInvariantName": "cr216_staffaccesscardapplicationissuance",
+    "RelatedEntityName": "DC Ops Onboardings",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "Update Team’s Organization Chart  (DC Ops Onboardings)",
+    "Name": "cr216_dcopsonboarding_cr216_updateteamsorganizationchart",
+    "OptionSetInfoNameMapping": {
+      "0": "No",
+      "1": "Yes"
+    },
+    "OptionSetIsBooleanValued": true,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "cr216_updateteamsorganizationchart",
+        "OptionSetReferenceEntityName": "DC Ops Onboardings"
+      }
+    },
+    "OptionSetTypeKey": "BooleanType",
+    "RelatedColumnInvariantName": "cr216_updateteamsorganizationchart",
+    "RelatedEntityName": "DC Ops Onboardings",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "Status (DC Ops Onboardings)",
+    "Name": "cr216_dcopsonboarding_statecode",
+    "OptionSetInfoNameMapping": {
+      "0": "Active",
+      "1": "Inactive"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "statecode",
+        "OptionSetReferenceEntityName": "DC Ops Onboardings"
+      }
+    },
+    "OptionSetTypeKey": "StateType",
+    "RelatedColumnInvariantName": "statecode",
+    "RelatedEntityName": "DC Ops Onboardings",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "Status Reason (DC Ops Onboardings)",
+    "Name": "cr216_dcopsonboarding_statuscode",
+    "OptionSetInfoNameMapping": {
+      "1": "Active",
+      "2": "Inactive"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "statuscode",
+        "OptionSetReferenceEntityName": "DC Ops Onboardings"
+      }
+    },
+    "OptionSetTypeKey": "StatusType",
+    "RelatedColumnInvariantName": "statuscode",
+    "RelatedEntityName": "DC Ops Onboardings",
+    "Type": "OptionSetInfo"
+  }
+]
