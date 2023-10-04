@@ -115,7 +115,7 @@
         "Name": "Header_Icon",
         "Parent": "Header",
         "PersistMetaDataIDKey": false,
-        "PublishOrderIndex": 102,
+        "PublishOrderIndex": 168,
         "Rules": [
           {
             "Category": "Data",
@@ -390,7 +390,7 @@
         "Name": "Header_Line_Top",
         "Parent": "Header",
         "PersistMetaDataIDKey": false,
-        "PublishOrderIndex": 103,
+        "PublishOrderIndex": 169,
         "Rules": [
           {
             "Category": "Data",
@@ -598,7 +598,7 @@
         "Name": "Header_DebugInfo",
         "Parent": "Header",
         "PersistMetaDataIDKey": false,
-        "PublishOrderIndex": 104,
+        "PublishOrderIndex": 170,
         "Rules": [
           {
             "Category": "Data",
@@ -849,7 +849,7 @@
         "Name": "Image1_1",
         "Parent": "Header",
         "PersistMetaDataIDKey": false,
-        "PublishOrderIndex": 105,
+        "PublishOrderIndex": 171,
         "Rules": [
           {
             "Category": "Data",
@@ -1169,7 +1169,7 @@
         "Name": "lblWelcomeMessage",
         "Parent": "Header",
         "PersistMetaDataIDKey": false,
-        "PublishOrderIndex": 106,
+        "PublishOrderIndex": 172,
         "Rules": [
           {
             "Category": "Data",
@@ -1563,7 +1563,7 @@
         "Name": "Header_Label_App",
         "Parent": "Header",
         "PersistMetaDataIDKey": false,
-        "PublishOrderIndex": 107,
+        "PublishOrderIndex": 173,
         "Rules": [
           {
             "Category": "Data",
@@ -1922,7 +1922,7 @@
         "Name": "lblWelcomeMessage_1",
         "Parent": "Header",
         "PersistMetaDataIDKey": false,
-        "PublishOrderIndex": 108,
+        "PublishOrderIndex": 174,
         "Rules": [
           {
             "Category": "Data",
@@ -2267,7 +2267,7 @@
         "Name": "lblLoginTIme",
         "Parent": "Header",
         "PersistMetaDataIDKey": false,
-        "PublishOrderIndex": 109,
+        "PublishOrderIndex": 175,
         "Rules": [
           {
             "Category": "Data",
@@ -2602,7 +2602,7 @@
         "Name": "Header_Line_Bottom",
         "Parent": "Header",
         "PersistMetaDataIDKey": false,
-        "PublishOrderIndex": 110,
+        "PublishOrderIndex": 176,
         "Rules": [
           {
             "Category": "Data",
