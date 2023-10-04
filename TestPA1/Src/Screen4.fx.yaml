@@ -150,8 +150,8 @@ Screen4 As screen:
 
     Component2_1 As Component2:
         Height: =71
-        HighlightDateColour: =If(Self.HighlightedDate in TestTablesColleaction,Color.AliceBlue,Color.Beige)
-        HighlightedDate: =DateAdd(Now(),-1)
+        HighlightDateColour: =If(Day(Self.HighlightedDate) in (TestTablesColleaction),Color.Red,Color.Beige)
+        HighlightedDate: =DateAdd(Now(),15)
         Width: =490
         Y: =56
         ZIndex: =4
