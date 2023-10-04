@@ -1,15 +1,12 @@
 {
   "ComponentAllowCustomization": true,
-  "ComponentChangedSinceFileImport": false,
-  "ComponentExtraMetadata": {
-    "ComponentDescription": ""
-  },
+  "ComponentChangedSinceFileImport": true,
   "ComponentManifest": {
     "AllowAccessToGlobals": false,
     "AllowCustomization": true,
     "Description": "",
-    "Name": "Footer",
-    "TemplateGuid": "00e9abf7410a493c8a010210cf8f791f"
+    "Name": "Component1",
+    "TemplateGuid": "1e5892e4217b4faf8467b5124f993850"
   },
   "ComponentType": "CanvasComponent",
   "CustomGroupControlTemplateName": "",
@@ -22,9 +19,8 @@
   "IsPcfControl": false,
   "IsPremiumPcfControl": false,
   "IsWidgetTemplate": false,
-  "LastModifiedTimestamp": "638319995881782508",
-  "Name": "00e9abf7410a493c8a010210cf8f791f",
+  "LastModifiedTimestamp": "638319997210687328",
+  "Name": "1e5892e4217b4faf8467b5124f993850",
   "OverridableProperties": {},
-  "TemplateOriginalName": "4fa1a021152d4d2c9a8abadf497443ed",
-  "Version": "637667114939912486"
+  "Version": "638319997210620962"
 }

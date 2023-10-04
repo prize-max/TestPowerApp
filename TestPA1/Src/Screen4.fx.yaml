@@ -1,19 +1,15 @@
 Screen4 As screen:
 
-    dtp As datepicker:
-        X: =40
-        Y: =40
-        ZIndex: =1
-
     "Gallery2 As gallery.'BrowseLayout_Vertical_TwoTextOneImageVariant_ver5.0'":
         DelayItemLoading: =true
+        Height: =447
         Items: =TestTables
         Layout: =Layout.Vertical
         LoadingSpinner: =LoadingSpinner.Data
         TemplatePadding: =0
         TemplateSize: =104
         X: =40
-        Y: =140
+        Y: =268
         ZIndex: =2
 
         Image1 As image:
@@ -151,4 +147,12 @@ Screen4 As screen:
             Visible: =ThisItem.IsSelected
             Width: =4
             ZIndex: =6
+
+    Component2_1 As Component2:
+        Height: =71
+        HighlightDateColour: =If(Self.HighlightedDate in TestTablesColleaction,Color.AliceBlue,Color.Beige)
+        HighlightedDate: =DateAdd(Now(),-1)
+        Width: =490
+        Y: =56
+        ZIndex: =4
 
