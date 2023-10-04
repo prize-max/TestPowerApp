@@ -1,6 +1,10 @@
 App As appinfo:
     BackEnabled: =false
-    OnStart: =Set(RefreshFlag,true);
+    OnStart: |
+        =Set(RefreshFlag,true);
+        ClearCollect(TestTablesColleaction, ForAll(TestTables,{SDate:ScheduleDate}));
+        //ForAll(TestTablesColleaction,ScheduleDate);
+    Theme: =PowerAppsTheme
 
     Host As hostControl.DefaultHostControlVariant:
         OnCancel: =false

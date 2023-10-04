@@ -1,6 +1,10 @@
 {
   "FormatVersion": "0.24",
   "Header": {
+    "AnalysisOptions": {
+      "DataflowAnalysisEnabled": false,
+      "DataflowAnalysisFlagStateToggledByUser": false
+    },
     "DocVersion": "1.334",
     "MinVersionToLoad": "1.331",
     "MSAppStructureVersion": "2.0"
@@ -14,13 +18,13 @@
       "appinsightserrortracing": false,
       "appinstrumentationcorrelationtracing": false,
       "autocreateenvironmentvariables": false,
-      "backfromhostaction": false,
       "behaviorpropertyui": false,
       "blockmovingcontrol": true,
       "cdsdataformatting": false,
       "classiccontrols": false,
       "consistentreturnschemafortabularfunctions": true,
       "copyandmerge": true,
+      "dataflowanalysisenabled": false,
       "datatablev2control": true,
       "dataverseactionsenabled": true,
       "delaycontrolrendering": true,
@@ -47,10 +51,8 @@
       "enableruntimepolicies": true,
       "enablesaveloadcleardataonweb": false,
       "enableupdateifdelegation": false,
-      "enhanceddelegation": true,
       "enhancedgalleryinitialization": true,
       "errorhandling": true,
-      "excelcompatibility": false,
       "expandedsavedatasupport": true,
       "exportimportcomponents2": true,
       "externalmessage": false,
@@ -74,6 +76,7 @@
       "parallelcodegen": false,
       "pdffunction": false,
       "powerfxdecimal": false,
+      "powerfxv1": false,
       "projectionmapping": true,
       "reactformulabar": false,
       "reliableconcurrent": true,
@@ -131,6 +134,7 @@
     "Screen1",
     "Screen1_1",
     "Screen2",
-    "Screen3"
+    "Screen3",
+    "Screen4"
   ]
 }

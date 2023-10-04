@@ -1,0 +1,99 @@
+[
+  {
+    "CdsFCBContext": "{\"FileType\":true,\"ImageExternalStorage\":true}",
+    "EntitySetName": "cr216_testtables",
+    "IsHidden": false,
+    "IsSampleData": false,
+    "IsWritable": true,
+    "LogicalName": "cr216_testtable",
+    "Name": "TestTables",
+    "NativeCDSDataSourceInfoNameMapping": {
+      "_ownerid_value": "Owner",
+      "cr216_name": "Name (cr216_name)",
+      "cr216_name_t_": "Name (cr216_name_t_)",
+      "cr216_scheduledate": "ScheduleDate",
+      "cr216_subject": "Subject",
+      "cr216_testtable_AsyncOperations": "System Jobs",
+      "cr216_testtable_BulkDeleteFailures": "Bulk Delete Failures",
+      "cr216_testtable_DuplicateBaseRecord": "Duplicate Records (cr216_testtable_DuplicateBaseRecord)",
+      "cr216_testtable_DuplicateMatchingRecord": "Duplicate Records (cr216_testtable_DuplicateMatchingRecord)",
+      "cr216_testtable_MailboxTrackingFolders": "Mailbox Auto Tracking Folders",
+      "cr216_testtable_PrincipalObjectAttributeAccesses": "Field Sharing",
+      "cr216_testtable_ProcessSession": "Process Sessions",
+      "cr216_testtable_SyncErrors": "Sync Errors",
+      "cr216_testtableid": "TestTable",
+      "createdby": "Created By",
+      "createdon": "Created On",
+      "createdonbehalfby": "Created By (Delegate)",
+      "importsequencenumber": "Import Sequence Number",
+      "modifiedby": "Modified By",
+      "modifiedon": "Modified On",
+      "modifiedonbehalfby": "Modified By (Delegate)",
+      "overriddencreatedon": "Record Created On",
+      "owningbusinessunit": "Owning Business Unit",
+      "owningteam": "Owning Team",
+      "owninguser": "Owning User",
+      "statecode": "Status",
+      "statuscode": "Status Reason",
+      "timezoneruleversionnumber": "Time Zone Rule Version Number",
+      "utcconversiontimezonecode": "UTC Conversion Time Zone Code",
+      "versionnumber": "Version Number"
+    },
+    "PreferredName": "TestTables",
+    "Type": "NativeCDSDataSourceInfo"
+  },
+  {
+    "DisplayName": "TestTables (Views)",
+    "Name": "_cr216_testtable_views",
+    "RelatedEntityName": "TestTables",
+    "TrimmedViewName": true,
+    "Type": "ViewInfo",
+    "ViewInfoNameMapping": {
+      "0f16eb7f-79d1-4600-98e2-59aab75a6bb7": "Active TestTables",
+      "460b4af7-f829-42eb-9073-adfe936f83c1": "Inactive TestTables",
+      "471a62a8-9f86-41b1-82ba-c7bd6f0750e4": "TestTable Lookup View",
+      "6e6cc34d-a3b5-47a3-9653-13524e16f736": "TestTable Associated View",
+      "bc6b05c9-d5fc-471d-8bd8-ceb28fab5480": "TestTable Advanced Find View"
+    }
+  },
+  {
+    "DisplayName": "Status (TestTables)",
+    "Name": "cr216_testtable_statecode",
+    "OptionSetInfoNameMapping": {
+      "0": "Active",
+      "1": "Inactive"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "statecode",
+        "OptionSetReferenceEntityName": "TestTables"
+      }
+    },
+    "OptionSetTypeKey": "StateType",
+    "RelatedColumnInvariantName": "statecode",
+    "RelatedEntityName": "TestTables",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "Status Reason (TestTables)",
+    "Name": "cr216_testtable_statuscode",
+    "OptionSetInfoNameMapping": {
+      "1": "Active",
+      "2": "Inactive"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "statuscode",
+        "OptionSetReferenceEntityName": "TestTables"
+      }
+    },
+    "OptionSetTypeKey": "StatusType",
+    "RelatedColumnInvariantName": "statuscode",
+    "RelatedEntityName": "TestTables",
+    "Type": "OptionSetInfo"
+  }
+]
