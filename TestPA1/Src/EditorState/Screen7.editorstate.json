@@ -821,7 +821,14 @@
         "Height",
         "DisplayMode",
         "ZIndex",
-        "OnSelect",
+        {
+          "AFDDataSourceName": "",
+          "AutoRuleBindingEnabled": false,
+          "AutoRuleBindingString": "/*retrieves calendar events for all days in current month view and selected calendar \n_minDate and _maxDate act as markers to prevent duplicate data collection*/         \nIf(IsBlank(_userDomain),         \n\tUpdateContext({_showLoading: true});         \n\tSet(_userDomain, Right(User().Email, Len(User().Email) - Find(\"@\", User().Email)));         \n\tSet(_dateSelected, Today());         \n\tSet(_firstDayOfMonth, DateAdd(Today(), 1 - Day(Today()), TimeUnit.Days));         \n\tSet(_firstDayInView, DateAdd(_firstDayOfMonth, -(Weekday(_firstDayOfMonth) - 2 + 1), TimeUnit.Days));         \n\tSet(_lastDayOfMonth, DateAdd(DateAdd(_firstDayOfMonth, 1, TimeUnit.Months), -1, TimeUnit.Days))         \n);         \nSet(_calendarVisible, false);         \nUpdateContext({_showLoading: true});         \nSet(_myCalendar, Self.Selected);         \nSet(_minDate, DateAdd(_firstDayOfMonth, -(Weekday(_firstDayOfMonth) - 2 + 1), TimeUnit.Days));         \nSet(_maxDate, DateAdd(DateAdd(_firstDayOfMonth, -(Weekday(_firstDayOfMonth) - 2 + 1), TimeUnit.Days), 40, TimeUnit.Days));         \nClearCollect(MyCalendarEvents, Office365Outlook.GetEventsCalendarViewV2(_myCalendar.Name, Text(_minDate, DateTimeFormat.UTC), Text(_maxDate, DateTimeFormat.UTC)).value);         \nUpdateContext({_showLoading: false});         \nSet(_calendarVisible, true)",
+          "InvariantPropertyName": "OnSelect",
+          "IsLockable": false,
+          "NameMapSourceSchema": "?"
+        },
         "OnChange",
         "Size",
         "BorderThickness",

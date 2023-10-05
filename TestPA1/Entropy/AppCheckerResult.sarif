@@ -2376,6 +2376,36 @@
             {
               "logicalLocations": [
                 {
+                  "fullyQualifiedName": "App.fffff"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "App.fffff",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "fffff",
+                "module": "App",
+                "type": "App"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "app-UnusedVariables",
+          "ruleIndex": 5
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
                   "fullyQualifiedName": "App.Blocks-1s-200px"
                 }
               ],
