@@ -2,6 +2,7 @@ Test As screen:
 
     Form2 As form:
         DataSource: =Vendor_Masters
+        DefaultMode: =FormMode.New
         Width: =1075
         X: =57
         Y: =75
@@ -213,7 +214,7 @@ Test As screen:
     Button2 As button:
         OnSelect: |-
             =Set( result,VMTrigger.Run(txtVendorName.Text,txtVendorEmail.Text,ddlVendorCategory.Selected.Value));
-            Set(jjj,result.status);
+            If(result.statuscode=500,Notify("Error",NotificationType.Error),Notify("Success",NotificationType.Success));
         Text: ="Submit"
         X: =436
         Y: =424

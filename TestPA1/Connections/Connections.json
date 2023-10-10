@@ -1,4 +1,18 @@
 {
+  "109fa7da-6ac3-44f9-b6ed-4e862e50baac": {
+    "connectionRef": {
+      "displayName": "Microsoft Dataverse",
+      "iconUri": "https://connectoricons-prod.azureedge.net/releases/v1.0.1651/1.0.1651.3382/commondataserviceforapps/icon.png",
+      "id": "/providers/microsoft.powerapps/apis/shared_commondataserviceforapps"
+    },
+    "datasets": {},
+    "dataSources": [],
+    "dependencies": {},
+    "dependents": [
+      "9e10f58e-bae6-4fcf-80af-adcda553a189"
+    ],
+    "id": "109fa7da-6ac3-44f9-b6ed-4e862e50baac"
+  },
   "1c197119-8d93-4a9d-9a4b-80731cbdb31c": {
     "connectionRef": {
       "apiTier": "Standard",
@@ -147,6 +161,53 @@
     "dependents": [],
     "id": "777567e2-623a-4626-b679-1b8a4569c2a6"
   },
+  "9e10f58e-bae6-4fcf-80af-adcda553a189": {
+    "connectionRef": {
+      "displayName": "Logic flows",
+      "iconUri": "https://connectoricons-prod.azureedge.net/releases/v1.0.1653/1.0.1653.3403/logicflows/icon.png",
+      "id": "/providers/microsoft.powerapps/apis/shared_logicflows",
+      "parameterHints": {
+        "workflowEntityId": {
+          "value": "b8e6e638-1667-ee11-9ae7-6045bd55e429"
+        },
+        "workflowName": {
+          "value": "f742123f-0271-4481-84f0-f216139e0bf7"
+        }
+      },
+      "parameterHintsV2": {
+        "workflowEntityId": {
+          "value": "b8e6e638-1667-ee11-9ae7-6045bd55e429"
+        },
+        "workflowName": {
+          "value": "f742123f-0271-4481-84f0-f216139e0bf7"
+        }
+      }
+    },
+    "datasets": {},
+    "dataSources": [
+      "VMTrigger"
+    ],
+    "dependencies": {
+      "shared_commondataserviceforapps": "109fa7da-6ac3-44f9-b6ed-4e862e50baac",
+      "shared_commondataserviceforapps_1": "ae56a612-3e21-4629-ba09-a94f6e30ff5d"
+    },
+    "dependents": [],
+    "id": "9e10f58e-bae6-4fcf-80af-adcda553a189"
+  },
+  "ae56a612-3e21-4629-ba09-a94f6e30ff5d": {
+    "connectionRef": {
+      "displayName": "Microsoft Dataverse",
+      "iconUri": "https://connectoricons-prod.azureedge.net/releases/v1.0.1651/1.0.1651.3382/commondataserviceforapps/icon.png",
+      "id": "/providers/microsoft.powerapps/apis/shared_commondataserviceforapps"
+    },
+    "datasets": {},
+    "dataSources": [],
+    "dependencies": {},
+    "dependents": [
+      "9e10f58e-bae6-4fcf-80af-adcda553a189"
+    ],
+    "id": "ae56a612-3e21-4629-ba09-a94f6e30ff5d"
+  },
   "b68c7df9-5da0-4b27-855f-14be906c8710": {
     "connectionRef": {
       "apiTier": "Standard",
@@ -224,58 +285,6 @@
     },
     "dependents": [],
     "id": "b7f351b0-5257-49cb-91bf-08543a194e5c"
-  },
-  "bac1ff41-59be-41ab-89da-e98ec76db49e": {
-    "connectionRef": {
-      "displayName": "Logic flows",
-      "iconUri": "https://connectoricons-prod.azureedge.net/releases/v1.0.1653/1.0.1653.3403/logicflows/icon.png",
-      "id": "/providers/microsoft.powerapps/apis/shared_logicflows",
-      "parameterHints": {
-        "c7442546-dc8d-4c89-8a4a-53bc1614f5cf": {
-          "value": "shared_commondataserviceforapps_1"
-        },
-        "workflowEntityId": {
-          "value": "b8e6e638-1667-ee11-9ae7-6045bd55e429"
-        },
-        "workflowName": {
-          "value": "f742123f-0271-4481-84f0-f216139e0bf7"
-        }
-      },
-      "parameterHintsV2": {
-        "shared_commondataserviceforapps_1": {
-          "value": "c7442546-dc8d-4c89-8a4a-53bc1614f5cf"
-        },
-        "workflowEntityId": {
-          "value": "b8e6e638-1667-ee11-9ae7-6045bd55e429"
-        },
-        "workflowName": {
-          "value": "f742123f-0271-4481-84f0-f216139e0bf7"
-        }
-      }
-    },
-    "datasets": {},
-    "dataSources": [
-      "VMTrigger"
-    ],
-    "dependencies": {
-      "shared_commondataserviceforapps_1": "c7442546-dc8d-4c89-8a4a-53bc1614f5cf"
-    },
-    "dependents": [],
-    "id": "bac1ff41-59be-41ab-89da-e98ec76db49e"
-  },
-  "c7442546-dc8d-4c89-8a4a-53bc1614f5cf": {
-    "connectionRef": {
-      "displayName": "Microsoft Dataverse",
-      "iconUri": "https://connectoricons-prod.azureedge.net/releases/v1.0.1651/1.0.1651.3382/commondataserviceforapps/icon.png",
-      "id": "/providers/microsoft.powerapps/apis/shared_commondataserviceforapps"
-    },
-    "datasets": {},
-    "dataSources": [],
-    "dependencies": {},
-    "dependents": [
-      "bac1ff41-59be-41ab-89da-e98ec76db49e"
-    ],
-    "id": "c7442546-dc8d-4c89-8a4a-53bc1614f5cf"
   },
   "d14469bc-7b71-474a-b377-10019421c6fa": {
     "connectionRef": {
