@@ -214,7 +214,7 @@ Test As screen:
     Button2 As button:
         OnSelect: |-
             =Set( result,VMTrigger.Run(txtVendorName.Text,txtVendorEmail.Text,ddlVendorCategory.Selected.Value));
-            If(result.Body.statuscode=500,Notify("Error",NotificationType.Error),Notify("Success",NotificationType.Success));
+            If(result.statuscode=500,Notify("Error",NotificationType.Error),Notify("Success",NotificationType.Success));
         Text: ="Submit"
         X: =436
         Y: =424
