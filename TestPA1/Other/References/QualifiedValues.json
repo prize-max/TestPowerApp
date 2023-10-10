@@ -50,6 +50,13 @@
       "Values": {
         "Information": "64d18e55-c15d-47eb-9cf1-ef1778b6280e"
       }
+    },
+    {
+      "Kind": "default.cds_kdc_vendor_master_forms",
+      "Namespace": "Vendor_Masters (Forms)",
+      "Values": {
+        "Information": "3448c224-7512-44ab-a688-e7fc0a269357"
+      }
     }
   ]
 }

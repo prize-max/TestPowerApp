@@ -1,0 +1,120 @@
+[
+  {
+    "CdsFCBContext": "{\"FileType\":true,\"ImageExternalStorage\":true}",
+    "EntitySetName": "kdc_vendor_masters",
+    "IsHidden": false,
+    "IsSampleData": false,
+    "IsWritable": true,
+    "LogicalName": "kdc_vendor_master",
+    "Name": "Vendor_Masters",
+    "NativeCDSDataSourceInfoNameMapping": {
+      "_ownerid_value": "Owner",
+      "cr216_kdc_vendor_rfq_Vendor_MasterLookUp_kdc_ve": "Vendor_RFQS",
+      "cr216_vendorcategory": "Vendor Category",
+      "createdby": "Created By",
+      "createdon": "Created On",
+      "createdonbehalfby": "Created By (Delegate)",
+      "importsequencenumber": "Import Sequence Number",
+      "kdc_m_vendoremail": "M_Vendor Email",
+      "kdc_name": "M_Vendor Company Name",
+      "kdc_vendor_master_AsyncOperations": "System Jobs",
+      "kdc_vendor_master_BulkDeleteFailures": "Bulk Delete Failures",
+      "kdc_vendor_master_DuplicateBaseRecord": "Duplicate Records (kdc_vendor_master_DuplicateBaseRecord)",
+      "kdc_vendor_master_DuplicateMatchingRecord": "Duplicate Records (kdc_vendor_master_DuplicateMatchingRecord)",
+      "kdc_vendor_master_MailboxTrackingFolders": "Mailbox Auto Tracking Folders",
+      "kdc_vendor_master_PrincipalObjectAttributeAccesses": "Field Sharing",
+      "kdc_vendor_master_ProcessSession": "Process Sessions",
+      "kdc_vendor_master_SyncErrors": "Sync Errors",
+      "kdc_vendor_masterid": "Vendor_Master",
+      "modifiedby": "Modified By",
+      "modifiedon": "Modified On",
+      "modifiedonbehalfby": "Modified By (Delegate)",
+      "overriddencreatedon": "Record Created On",
+      "owningbusinessunit": "Owning Business Unit",
+      "owningteam": "Owning Team",
+      "owninguser": "Owning User",
+      "statecode": "Status",
+      "statuscode": "Status Reason",
+      "timezoneruleversionnumber": "Time Zone Rule Version Number",
+      "utcconversiontimezonecode": "UTC Conversion Time Zone Code",
+      "versionnumber": "Version Number"
+    },
+    "PreferredName": "Vendor_Masters",
+    "Type": "NativeCDSDataSourceInfo"
+  },
+  {
+    "DisplayName": "Vendor_Masters (Views)",
+    "Name": "_kdc_vendor_master_views",
+    "RelatedEntityName": "Vendor_Masters",
+    "TrimmedViewName": true,
+    "Type": "ViewInfo",
+    "ViewInfoNameMapping": {
+      "53e475f8-3fbc-452f-aad8-3a138f09d147": "Vendor_Master Lookup View",
+      "60ae0f41-2733-4c53-94d8-5dbfd0bb470a": "Inactive Vendor_Masters",
+      "6fd2f947-e50d-44e1-a25a-1a3d217b2349": "Vendor_Master Associated View",
+      "c98d7a02-796a-4389-a1bf-7a33cd48283e": "Vendor_Master Advanced Find View",
+      "d3f04f27-99bc-4d45-8e7b-c3227090f268": "Active Vendor_Masters"
+    }
+  },
+  {
+    "DisplayName": "Master Vendor Category",
+    "Name": "cr216_mastervendorcategory",
+    "OptionSetInfoNameMapping": {
+      "680730000": "New",
+      "680730001": "Existing Vendor",
+      "680730002": "SAP Approved Vendor"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": true,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "cr216_vendorcategory",
+        "OptionSetReferenceEntityName": "Vendor_Masters"
+      }
+    },
+    "OptionSetTypeKey": "PicklistType",
+    "RelatedColumnInvariantName": "cr216_vendorcategory",
+    "RelatedEntityName": "Vendor_Masters",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "Status (Vendor_Masters)",
+    "Name": "kdc_vendor_master_statecode",
+    "OptionSetInfoNameMapping": {
+      "0": "Active",
+      "1": "Inactive"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "statecode",
+        "OptionSetReferenceEntityName": "Vendor_Masters"
+      }
+    },
+    "OptionSetTypeKey": "StateType",
+    "RelatedColumnInvariantName": "statecode",
+    "RelatedEntityName": "Vendor_Masters",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "Status Reason (Vendor_Masters)",
+    "Name": "kdc_vendor_master_statuscode",
+    "OptionSetInfoNameMapping": {
+      "1": "Active",
+      "2": "Inactive"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "statuscode",
+        "OptionSetReferenceEntityName": "Vendor_Masters"
+      }
+    },
+    "OptionSetTypeKey": "StatusType",
+    "RelatedColumnInvariantName": "statuscode",
+    "RelatedEntityName": "Vendor_Masters",
+    "Type": "OptionSetInfo"
+  }
+]

@@ -1,0 +1,10 @@
+[
+  {
+    "ApiId": "/providers/microsoft.powerapps/apis/shared_logicflows",
+    "FlowNameId": "57f6e92a-b6d4-46c0-93ef-ffed350052e2",
+    "Name": "VMTrigger",
+    "ServiceKind": "ConnectedWadl",
+    "Type": "ServiceInfo",
+    "WorkflowEntityId": "b8e6e638-1667-ee11-9ae7-6045bd55e429"
+  }
+]
